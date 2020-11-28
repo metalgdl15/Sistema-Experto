@@ -46,10 +46,20 @@
          <font>
             <Font size="24.0" />
          </font></Label>
-      <CheckBox fx:id="boxTheria" layoutX="30.0" layoutY="94.0" mnemonicParsing="false" text="Theria(vivíparo)" />
-      <CheckBox fx:id="boxPrototheria" layoutX="30.0" layoutY="125.0" mnemonicParsing="false" text="Prototheria(Ovíparo)" />
-      <CheckBox fx:id="boxEutheria" layoutX="234.0" layoutY="94.0" mnemonicParsing="false" text="Eutheria(Placentario)" />
-      <CheckBox fx:id="boxMetatheria" layoutX="234.0" layoutY="125.0" mnemonicParsing="false" text="Metatheria(Marsupial)" />
+      <Label layoutX="1217.0" layoutY="265.0" text="FAMILIA">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="651.0" text="Dedos">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="boxTheria" layoutX="30.0" layoutY="94.0" mnemonicParsing="false" text="Theria (vivíparo)" />
+      <CheckBox fx:id="boxPrototheria" layoutX="30.0" layoutY="125.0" mnemonicParsing="false" text="Prototheria (Ovíparo)" />
+      <CheckBox fx:id="boxEutheria" layoutX="234.0" layoutY="94.0" mnemonicParsing="false" text="Eutheria (Placentario)" />
+      <CheckBox fx:id="boxMetatheria" layoutX="234.0" layoutY="125.0" mnemonicParsing="false" text="Metatheria (Marsupial)" />
       <CheckBox fx:id="boxAfrica" layoutX="450.0" layoutY="94.0" mnemonicParsing="false" text="Africa" />
       <CheckBox fx:id="boxAustralia" layoutX="450.0" layoutY="125.0" mnemonicParsing="false" text="Australia" />
       <CheckBox fx:id="boxAmerica" layoutX="450.0" layoutY="162.0" mnemonicParsing="false" text="América" />
@@ -73,7 +83,7 @@
       <CheckBox fx:id="boxOrejasLargas" layoutX="1082.0" layoutY="182.0" mnemonicParsing="false" text="Orejas largas" />
       <CheckBox fx:id="boxPico" layoutX="1082.0" layoutY="213.0" mnemonicParsing="false" text="Pico" />
       <CheckBox fx:id="boxOjosDiminutos" layoutX="1255.0" layoutY="92.0" mnemonicParsing="false" text="Ojos diminutos" />
-      <CheckBox fx:id="boxOjosVestigiales" layoutX="1255.0" layoutY="127.0" mnemonicParsing="false" text="Ojos vestigiales(Ceguera)" />
+      <CheckBox fx:id="boxOjosVestigiales" layoutX="1255.0" layoutY="127.0" mnemonicParsing="false" text="Ojos vestigiales (Ceguera)" />
       <CheckBox fx:id="boxVisionDesarrollada" layoutX="1255.0" layoutY="159.0" mnemonicParsing="false" text="Visión desarrollada" />
       <CheckBox fx:id="boxLenguaProtactil" layoutX="1255.0" layoutY="190.0" mnemonicParsing="false" text="Lengua protáctil" />
       <CheckBox fx:id="boxGarras" layoutX="24.0" layoutY="321.0" mnemonicParsing="false" text="Garras" />
@@ -100,7 +110,7 @@
       <CheckBox fx:id="boxDiastemaMarcado" layoutX="435.0" layoutY="421.0" mnemonicParsing="false" text="Diastema marcado" />
       <CheckBox fx:id="boxSinDiastema" layoutX="435.0" layoutY="457.0" mnemonicParsing="false" text="Sin diastema" />
       <CheckBox fx:id="boxSinIncisivos" layoutX="436.0" layoutY="490.0" mnemonicParsing="false" text="Sin incisivos" />
-      <CheckBox fx:id="boxIncisivosDesarrollados" layoutX="437.0" layoutY="524.0" mnemonicParsing="false" text="Incisivos desarrollados" />
+      <CheckBox fx:id="boxIncisivosDesarrollados" layoutX="436.0" layoutY="524.0" mnemonicParsing="false" text="Incisivos desarrollados" />
       <CheckBox fx:id="boxIncisivosNoDesarrollados" layoutX="436.0" layoutY="559.0" mnemonicParsing="false" text="Incisivos no desarrollados" />
       <CheckBox fx:id="boxIncisivosHipertrofiados" layoutX="436.0" layoutY="593.0" mnemonicParsing="false" text="Insicivos hipertrofiados" />
       <CheckBox fx:id="boxIncisivosClavija" layoutX="671.0" layoutY="320.0" mnemonicParsing="false" text="Incisivos clavija" />
@@ -117,6 +127,31 @@
             <Font size="37.0" />
          </font>
       </Label>
+      <CheckBox fx:id="boxParDedos" layoutX="22.0" layoutY="696.0" mnemonicParsing="false" text="Par de dedos" />
+      <CheckBox fx:id="boxImparDedos" layoutX="22.0" layoutY="729.0" mnemonicParsing="false" text="Impar de dedos" />
+      <CheckBox fx:id="boxPentadactilo" layoutX="22.0" layoutY="797.0" mnemonicParsing="false" text="Pentadactilo (5 dedos)" />
+      <CheckBox fx:id="boxMin4Dedos" layoutX="22.0" layoutY="764.0" mnemonicParsing="false" text="Min. 4 dedos" />
+      <CheckBox fx:id="boxSindactilo" layoutX="23.0" layoutY="830.0" mnemonicParsing="false" text="Sindáctilos (dedos pegados)" />
+      <CheckBox fx:id="boxDedosPalmeados" layoutX="23.0" layoutY="863.0" mnemonicParsing="false" text="Dedos Palmeados" />
+      <CheckBox fx:id="box4Delanteros" layoutX="248.0" layoutY="694.0" mnemonicParsing="false" text="4 dedo delanteros" />
+      <CheckBox fx:id="box3Treaseros" layoutX="248.0" layoutY="727.0" mnemonicParsing="false" text="3 dedos  traseros" />
+      <CheckBox fx:id="box4Traseros" layoutX="248.0" layoutY="795.0" mnemonicParsing="false" text="4 dedos traseros" />
+      <CheckBox fx:id="box5Delanteros" layoutX="248.0" layoutY="762.0" mnemonicParsing="false" text="5 dedos  delanteros" />
+      <CheckBox fx:id="box5Traseros" layoutX="248.0" layoutY="834.0" mnemonicParsing="false" text="5 dedos traseros" />
+      <Label layoutX="526.0" layoutY="651.0" text="Comportamiento">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="boxEcolocacion" layoutX="630.0" layoutY="796.0" mnemonicParsing="false" text="Ecolocación" />
+      <CheckBox fx:id="boxVeneso" layoutX="630.0" layoutY="761.0" mnemonicParsing="false" text="Venenoso" />
+      <CheckBox fx:id="boxFosorial" layoutX="630.0" layoutY="728.0" mnemonicParsing="false" text="Fosorial" />
+      <CheckBox fx:id="boxMacrosmatico" layoutX="630.0" layoutY="694.0" mnemonicParsing="false" text="Macrosmático" />
+      <CheckBox fx:id="boxNocturno" layoutX="488.0" layoutY="829.0" mnemonicParsing="false" text="Nocturno" />
+      <CheckBox fx:id="boxUngulado" layoutX="487.0" layoutY="763.0" mnemonicParsing="false" text="Ungulado" />
+      <CheckBox fx:id="boxBipedo" layoutX="488.0" layoutY="796.0" mnemonicParsing="false" text="Bípedo" />
+      <CheckBox fx:id="boxPlantigrado" layoutX="487.0" layoutY="728.0" mnemonicParsing="false" text="Plantígrado" />
+      <CheckBox fx:id="boxDigitigrado" layoutX="487.0" layoutY="695.0" mnemonicParsing="false" text="Digitígrado" />
       <TableView fx:id="tablaOrdenes" layoutX="883.0" layoutY="321.0" onMouseClicked="#consultafamilias" prefHeight="578.0" prefWidth="253.0">
         <columns>
           <TableColumn fx:id="columnOrden" prefWidth="252.0" text="Posibles respuestas" />
@@ -127,11 +162,5 @@
             <TableColumn fx:id="columnFamilia" prefWidth="252.0" text="Contiente" />
          </columns>
       </TableView>
-      <Label layoutX="1217.0" layoutY="265.0" text="FAMILIA">
-         <font>
-            <Font size="37.0" />
-         </font>
-      </Label>
-      <ImageView fx:id="imagen" fitHeight="218.0" fitWidth="659.0" layoutX="112.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>

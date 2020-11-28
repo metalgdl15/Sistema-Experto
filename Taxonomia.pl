@@ -832,7 +832,7 @@ caracteristica(primates,terrestre).
 caracteristica(primates,pequeno).
 caracteristica(primates,mediano).
 caracteristica(primates,grande).
-caracteristica(primates,bidepo).
+caracteristica(primates,bipedo).
 caracteristica(primates,arboricola).
 caracteristica(primates,dedos_impares).
 caracteristica(primates,cola_larga).
@@ -953,7 +953,6 @@ caracteristica(tubulidentata,mediano).
 caracteristica(tubulidentata,fosorial).
 caracteristica(tubulidentata,nocturno).
 caracteristica(tubulidentata,digitigrado).
-caracteristica(tubulidentata,garras).
 caracteristica(tubulidentata,piel_gruesa).
 
 

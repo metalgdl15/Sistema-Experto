@@ -64,7 +64,11 @@ public class FXMLDocumentController implements Initializable {
     @FXML CheckBox boxCaninosDesarrollados, boxSinCaninos, boxCarnicerasDesarrolladas, boxDiastemaMarcado, boxSinDiastema, boxSinIncisivos, boxIncisivosDesarrollados, boxIncisivosNoDesarrollados, boxIncisivosHipertrofiados;
     @FXML CheckBox boxIncisivosClavija, boxDosInsicivos, boxDuplidentado, boxDiprotodonto, boxPoliprotodonto, boxSinDientes, boxDientesNoDesarrollados, boxCincuentaDientes, boxDientesTubulados;
     
+    //Dedos
+    @FXML CheckBox boxParDedos, boxImparDedos, boxMin4Dedos, boxPentadactilo, boxSindactilo, boxDedosPalmeados, box4Delanteros, box3Treaseros, box5Delanteros, box4Traseros, box5Traseros;
     
+    //Comportamiento
+    @FXML CheckBox boxDigitigrado, boxPlantigrado, boxUngulado, boxBipedo, boxNocturno, boxMacrosmatico, boxFosorial, boxVeneso, boxEcolocacion;
     
     @FXML TableView<String> tablaOrdenes;
     ObservableList <String> oblistOrdenes= FXCollections.observableArrayList();
@@ -76,8 +80,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML TableColumn<String, String> columnFamilia;
     
     List<String> listaCaracteriticas = new ArrayList<>();    
-    
-    @FXML ImageView imagen;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -92,12 +94,12 @@ public class FXMLDocumentController implements Initializable {
         initCabeza();
         initMorfologia();
         initDientes();
-        imprimir();
-        
-        abrirImagen();
+        initDedos();
+        initCompartamiento();
+        imprimir();    
         
     }
-    
+
     private void abrirArchivo(){
 //        Query q1 = new Query("consult", new Term[]{new Atom("Taxonomia.pl")});
         
@@ -106,12 +108,6 @@ public class FXMLDocumentController implements Initializable {
         
         System.out.println("consult"+ (q1.hasSolution()? "succes": "failed"));
 
-    }
-    
-    private void abrirImagen(){
-        InputStream src = getClass().getResourceAsStream("/img/taxo.png");
-        Image imagen = new Image(src);
-        this.imagen.setImage(imagen);
     }
     
     private void initNacimiento(){
@@ -919,6 +915,251 @@ public class FXMLDocumentController implements Initializable {
                     listaCaracteriticas.add("caracteristica(X, dientes_tubulados)");
                 else
                     listaCaracteriticas.remove("caracteristica(X, dientes_tubulados)");
+                
+                consulta();
+            }
+        });
+    }
+    
+    private void initDedos(){
+        boxParDedos.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_pares)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_pares)");
+                
+                consulta();
+            }
+        });
+        
+        boxImparDedos.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_impares)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_impares)");
+                
+                consulta();
+            }
+        });
+        
+        boxMin4Dedos.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_min_cuatro)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_min_cuatro)");
+                
+                consulta();
+            }
+        });
+        
+        boxPentadactilo.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, pentadactilo)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, pentadactilo)");
+                
+                consulta();
+            }
+        });
+        
+        boxSindactilo.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, sindactilos)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, sindactilos)");
+                
+                consulta();
+            }
+        });
+        
+        boxDedosPalmeados.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_palmeados)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_palmeados)");
+                
+                consulta();
+            }
+        });
+        
+        box4Delanteros.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_delanteros_cuatro)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_delanteros_cuatro)");
+                
+                consulta();
+            }
+        });
+        
+        box3Treaseros.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_traseros_tres)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_traseros_tres)");
+                
+                consulta();
+            }
+        });
+        
+        box5Delanteros.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_delanteros_cinco)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_delanteros_cinco)");
+                
+                consulta();
+            }
+        });
+        
+        box4Traseros.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_traseros_cuatro)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_traseros_cuatro)");
+                
+                consulta();
+            }
+        });
+        
+        box5Traseros.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, dedos_traseros_cinco)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, dedos_traseros_cinco)");
+                
+                consulta();
+            }
+        });
+        
+    }
+    
+    private void initCompartamiento(){
+        boxDigitigrado.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, digitigrado)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, digitigrado)");
+                
+                consulta();
+            }
+        });
+        
+        boxPlantigrado.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, plantigrado)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, plantigrado)");
+                
+                consulta();
+            }
+        });
+        
+        boxUngulado.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, ungulado)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, ungulado)");
+                
+                consulta();
+            }
+        });
+        
+        boxBipedo.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, bipedo)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, bipedo)");
+                
+                consulta();
+            }
+        });
+        
+        boxNocturno.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, nocturno)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, nocturno)");
+                
+                consulta();
+            }
+        });
+        
+        boxMacrosmatico.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, macrosmatico)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, macrosmatico)");
+                
+                consulta();
+            }
+        });
+        
+        boxFosorial.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, fosorial)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, fosorial)");
+                
+                consulta();
+            }
+        });
+        
+        boxVeneso.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, venenoso)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, venenoso)");
+                
+                consulta();
+            }
+        });
+        
+        boxEcolocacion.selectedProperty().addListener(new ChangeListener<Boolean>(){        
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if(newValue)
+                    listaCaracteriticas.add("caracteristica(X, ecolocacion)");
+                else
+                    listaCaracteriticas.remove("caracteristica(X, ecolocacion)");
                 
                 consulta();
             }
