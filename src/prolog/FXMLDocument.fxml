@@ -105,7 +105,7 @@
       <CheckBox fx:id="boxRobusto" layoutX="180.0" layoutY="563.0" mnemonicParsing="false" text="Robusto" />
       <CheckBox fx:id="boxPielGuresa" layoutX="180.0" layoutY="596.0" mnemonicParsing="false" text="Piel gruesa" />
       <CheckBox fx:id="boxCaninosDesarrollados" layoutX="434.0" layoutY="323.0" mnemonicParsing="false" text="Caninos Desarrollados" />
-      <CheckBox fx:id="boxSinCaninos" layoutX="434.0" layoutY="355.0" mnemonicParsing="false" text="Sin canicos" />
+      <CheckBox fx:id="boxSinCaninos" layoutX="434.0" layoutY="355.0" mnemonicParsing="false" text="Sin caninos" />
       <CheckBox fx:id="boxCarnicerasDesarrolladas" layoutX="434.0" layoutY="389.0" mnemonicParsing="false" text="Carniceras Desarrolladas" />
       <CheckBox fx:id="boxDiastemaMarcado" layoutX="435.0" layoutY="421.0" mnemonicParsing="false" text="Diastema marcado" />
       <CheckBox fx:id="boxSinDiastema" layoutX="435.0" layoutY="457.0" mnemonicParsing="false" text="Sin diastema" />
