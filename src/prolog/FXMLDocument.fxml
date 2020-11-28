@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="926.0" prefWidth="1464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prolog.FXMLDocumentController">
+    <children>
+      <Label layoutX="61.0" layoutY="43.0" text="Nacimiento">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="255.0" layoutY="42.0" text="Desarrollo">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="444.0" layoutY="43.0" text="Locación">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="570.0" layoutY="42.0" text="Alimentación">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="746.0" layoutY="43.0" text="Tamaño">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="902.0" layoutY="43.0" text="Transporte">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="271.0" text="Morfología">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="1163.0" layoutY="43.0" text="Cabeza">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="594.0" layoutY="271.0" text="Dientes">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <CheckBox fx:id="boxTheria" layoutX="30.0" layoutY="94.0" mnemonicParsing="false" text="Theria(vivíparo)" />
+      <CheckBox fx:id="boxPrototheria" layoutX="30.0" layoutY="125.0" mnemonicParsing="false" text="Prototheria(Ovíparo)" />
+      <CheckBox fx:id="boxEutheria" layoutX="234.0" layoutY="94.0" mnemonicParsing="false" text="Eutheria(Placentario)" />
+      <CheckBox fx:id="boxMetatheria" layoutX="234.0" layoutY="125.0" mnemonicParsing="false" text="Metatheria(Marsupial)" />
+      <CheckBox fx:id="boxAfrica" layoutX="450.0" layoutY="94.0" mnemonicParsing="false" text="Africa" />
+      <CheckBox fx:id="boxAustralia" layoutX="450.0" layoutY="125.0" mnemonicParsing="false" text="Australia" />
+      <CheckBox fx:id="boxAmerica" layoutX="450.0" layoutY="162.0" mnemonicParsing="false" text="América" />
+      <CheckBox fx:id="boxAsia" layoutX="450.0" layoutY="195.0" mnemonicParsing="false" text="Asia" />
+      <CheckBox fx:id="boxOmnivoro" layoutX="580.0" layoutY="91.0" mnemonicParsing="false" text="Omnívoro" />
+      <CheckBox fx:id="boxCarnivoro" layoutX="580.0" layoutY="122.0" mnemonicParsing="false" text="Carnívoro" />
+      <CheckBox fx:id="boxHerbivoro" layoutX="581.0" layoutY="149.0" mnemonicParsing="false" text="Herbívoro" />
+      <CheckBox fx:id="boxInsectivoro" layoutX="582.0" layoutY="182.0" mnemonicParsing="false" text="Insectívoro" />
+      <CheckBox fx:id="boxFrugivoro" layoutX="581.0" layoutY="213.0" mnemonicParsing="false" text="Frugívoro" />
+      <CheckBox fx:id="boxPequeno" layoutX="745.0" layoutY="91.0" mnemonicParsing="false" text="Pequeño" />
+      <CheckBox fx:id="boxMediano" layoutX="745.0" layoutY="122.0" mnemonicParsing="false" text="Mediano" />
+      <CheckBox fx:id="boxGrande" layoutX="745.0" layoutY="149.0" mnemonicParsing="false" text="Grande" />
+      <CheckBox fx:id="boxMuyGrande" layoutX="745.0" layoutY="182.0" mnemonicParsing="false" text="Muy grande" />
+      <CheckBox fx:id="boxTerreste" layoutX="911.0" layoutY="95.0" mnemonicParsing="false" text="Terrestre" />
+      <CheckBox fx:id="boxAcuatico" layoutX="911.0" layoutY="128.0" mnemonicParsing="false" text="Acuático" />
+      <CheckBox fx:id="boxSemiacuatico" layoutX="911.0" layoutY="155.0" mnemonicParsing="false" text="Semiacuático" />
+      <CheckBox fx:id="boxArboricola" layoutX="911.0" layoutY="188.0" mnemonicParsing="false" text="Arborícola" />
+      <CheckBox fx:id="boxHocicoAlargado" layoutX="1082.0" layoutY="91.0" mnemonicParsing="false" text="Hocico alargado" />
+      <CheckBox fx:id="boxHocicoProboscide" layoutX="1082.0" layoutY="122.0" mnemonicParsing="false" text="Hocico Probóscide" />
+      <CheckBox fx:id="boxLabioLeporino" layoutX="1082.0" layoutY="151.0" mnemonicParsing="false" text="Labio leporino" />
+      <CheckBox fx:id="boxOrejasLargas" layoutX="1082.0" layoutY="182.0" mnemonicParsing="false" text="Orejas largas" />
+      <CheckBox fx:id="boxPico" layoutX="1082.0" layoutY="213.0" mnemonicParsing="false" text="Pico" />
+      <CheckBox fx:id="boxOjosDiminutos" layoutX="1255.0" layoutY="92.0" mnemonicParsing="false" text="Ojos diminutos" />
+      <CheckBox fx:id="boxOjosVestigiales" layoutX="1255.0" layoutY="127.0" mnemonicParsing="false" text="Ojos vestigiales(Ceguera)" />
+      <CheckBox fx:id="boxVisionDesarrollada" layoutX="1255.0" layoutY="159.0" mnemonicParsing="false" text="Visión desarrollada" />
+      <CheckBox fx:id="boxLenguaProtactil" layoutX="1255.0" layoutY="190.0" mnemonicParsing="false" text="Lengua protáctil" />
+      <CheckBox fx:id="boxGarras" layoutX="24.0" layoutY="321.0" mnemonicParsing="false" text="Garras" />
+      <CheckBox fx:id="boxPatagio" layoutX="24.0" layoutY="353.0" mnemonicParsing="false" text="Patagio" />
+      <CheckBox fx:id="boxEscamas" layoutX="24.0" layoutY="388.0" mnemonicParsing="false" text="Escamas" />
+      <CheckBox fx:id="boxAletas" layoutX="25.0" layoutY="420.0" mnemonicParsing="false" text="Aletas" />
+      <CheckBox fx:id="boxPlacaOsea" layoutX="25.0" layoutY="455.0" mnemonicParsing="false" text="Placa Ósea" />
+      <CheckBox fx:id="boxPezunas" layoutX="25.0" layoutY="488.0" mnemonicParsing="false" text="Pezuñas" />
+      <CheckBox fx:id="boxPelaje" layoutX="25.0" layoutY="522.0" mnemonicParsing="false" text="Pelaje" />
+      <CheckBox fx:id="boxPuas" layoutX="25.0" layoutY="557.0" mnemonicParsing="false" text="Púas o Espinas" />
+      <CheckBox fx:id="boxEscroto" layoutX="27.0" layoutY="596.0" mnemonicParsing="false" text="Escroto" />
+      <CheckBox fx:id="boxEspiraculo" layoutX="180.0" layoutY="321.0" mnemonicParsing="false" text="Espiraculo" />
+      <CheckBox fx:id="boxUnasPlanas" layoutX="179.0" layoutY="353.0" mnemonicParsing="false" text="Uñas planas" />
+      <CheckBox fx:id="boxArticulacionesXenartrales" layoutX="180.0" layoutY="386.0" mnemonicParsing="false" text="Articulaciones Xenartales" />
+      <CheckBox fx:id="boxColaPrensil" layoutX="180.0" layoutY="420.0" mnemonicParsing="false" text="Cola prensil" />
+      <CheckBox fx:id="boxColaLarga" layoutX="180.0" layoutY="458.0" mnemonicParsing="false" text="Cola larga" />
+      <CheckBox fx:id="boxHuellasDigitales" layoutX="180.0" layoutY="492.0" mnemonicParsing="false" text="Huellas digitales" />
+      <CheckBox fx:id="boxSinMarsupio" layoutX="180.0" layoutY="528.0" mnemonicParsing="false" text="Sin marsupio" />
+      <CheckBox fx:id="boxRobusto" layoutX="180.0" layoutY="563.0" mnemonicParsing="false" text="Robusto" />
+      <CheckBox fx:id="boxPielGuresa" layoutX="180.0" layoutY="596.0" mnemonicParsing="false" text="Piel gruesa" />
+      <CheckBox fx:id="boxCaninosDesarrollados" layoutX="434.0" layoutY="323.0" mnemonicParsing="false" text="Caninos Desarrollados" />
+      <CheckBox fx:id="boxSinCaninos" layoutX="434.0" layoutY="355.0" mnemonicParsing="false" text="Sin canicos" />
+      <CheckBox fx:id="boxCarnicerasDesarrolladas" layoutX="434.0" layoutY="389.0" mnemonicParsing="false" text="Carniceras Desarrolladas" />
+      <CheckBox fx:id="boxDiastemaMarcado" layoutX="435.0" layoutY="421.0" mnemonicParsing="false" text="Diastema marcado" />
+      <CheckBox fx:id="boxSinDiastema" layoutX="435.0" layoutY="457.0" mnemonicParsing="false" text="Sin diastema" />
+      <CheckBox fx:id="boxSinIncisivos" layoutX="436.0" layoutY="490.0" mnemonicParsing="false" text="Sin incisivos" />
+      <CheckBox fx:id="boxIncisivosDesarrollados" layoutX="437.0" layoutY="524.0" mnemonicParsing="false" text="Incisivos desarrollados" />
+      <CheckBox fx:id="boxIncisivosNoDesarrollados" layoutX="436.0" layoutY="559.0" mnemonicParsing="false" text="Incisivos no desarrollados" />
+      <CheckBox fx:id="boxIncisivosHipertrofiados" layoutX="436.0" layoutY="593.0" mnemonicParsing="false" text="Insicivos hipertrofiados" />
+      <CheckBox fx:id="boxIncisivosClavija" layoutX="671.0" layoutY="320.0" mnemonicParsing="false" text="Incisivos clavija" />
+      <CheckBox fx:id="boxDosInsicivos" layoutX="671.0" layoutY="353.0" mnemonicParsing="false" text="Dos incisivos super, Infer" />
+      <CheckBox fx:id="boxDuplidentado" layoutX="671.0" layoutY="389.0" mnemonicParsing="false" text="Duplidentado" />
+      <CheckBox fx:id="boxDiprotodonto" layoutX="671.0" layoutY="425.0" mnemonicParsing="false" text="Diprotodonto" />
+      <CheckBox fx:id="boxPoliprotodonto" layoutX="671.0" layoutY="458.0" mnemonicParsing="false" text="Poliprotodonto" />
+      <CheckBox fx:id="boxSinDientes" layoutX="671.0" layoutY="492.0" mnemonicParsing="false" text="Sin dientes" />
+      <CheckBox fx:id="boxDientesNoDesarrollados" layoutX="671.0" layoutY="522.0" mnemonicParsing="false" text="Dientes no desarrollados" />
+      <CheckBox fx:id="boxCincuentaDientes" layoutX="671.0" layoutY="557.0" mnemonicParsing="false" text="Cincuenta dientes" />
+      <CheckBox fx:id="boxDientesTubulados" layoutX="671.0" layoutY="594.0" mnemonicParsing="false" text="Dientes tubulados" />
+      <Label layoutX="948.0" layoutY="273.0" text="ORDEN">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaOrdenes" layoutX="883.0" layoutY="321.0" onMouseClicked="#consultafamilias" prefHeight="578.0" prefWidth="253.0">
+        <columns>
+          <TableColumn fx:id="columnOrden" prefWidth="252.0" text="Posibles respuestas" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tablaFamilia" layoutX="1152.0" layoutY="322.0" prefHeight="578.0" prefWidth="253.0">
+         <columns>
+            <TableColumn fx:id="columnFamilia" prefWidth="252.0" text="Contiente" />
+         </columns>
+      </TableView>
+      <Label layoutX="1217.0" layoutY="265.0" text="FAMILIA">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagen" fitHeight="218.0" fitWidth="659.0" layoutX="112.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
